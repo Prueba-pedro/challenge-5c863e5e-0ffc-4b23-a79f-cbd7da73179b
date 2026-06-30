@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "user_management_api"
+version = "0.1.0"
+description = "API REST para gestión de usuarios"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "0.115"
+sqlalchemy = "2.0"
+pydantic = "2.0"
+python-jose[cryptography] = "3.3"
+
+uvicorn = { version = "^0.24.0", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
